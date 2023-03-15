@@ -6,9 +6,9 @@ public class Main {
         var estacion = "invierno";
 
         if(numeroIf < 0){
-            System.out.println("es positivo");
-        }else if(numeroIf > 0){
             System.out.println("es negativo");
+        }else if(numeroIf > 0){
+            System.out.println("es positivo");
         }else{
             System.out.println("es 0");
         }
@@ -16,7 +16,7 @@ public class Main {
         while (numeroWhile < 3){
             numeroWhile++;
             System.out.println(numeroWhile);
-        };
+        }
 
         do {
             numeroWhile++;
@@ -26,7 +26,7 @@ public class Main {
         for (int i =0;i<3;i++){
             numeroFor++;
             System.out.println(numeroFor);
-        };
+        }
 
         switch (estacion){
             case "primavera":
