@@ -1,49 +1,47 @@
 public class Main {
     public static void main(String[] args) {
-        int numeroWhile = 0;
-        int numeroIf = 2;
-        int numeroFor = 0;
-        var estacion = "invierno";
+        Persona persona = new Persona();
 
-        if(numeroIf < 0){
-            System.out.println("es negativo");
-        }else if(numeroIf > 0){
-            System.out.println("es positivo");
-        }else{
-            System.out.println("es 0");
-        }
+        persona.setEdad(23);
+        System.out.println(persona.getEdad());
 
-        while (numeroWhile < 3){
-            System.out.println(numeroWhile);
-            numeroWhile++;
-        }
+        persona.setNombre("Federico");
+        System.out.println(persona.getNombre());
 
-        do {
-            numeroWhile++;
-            System.out.println(numeroWhile);
-        }while (numeroWhile < 3);
-
-        for (int i =0;i<3;i++){
-            numeroFor++;
-            System.out.println(numeroFor);
-        }
-
-        switch (estacion){
-            case "primavera":
-                System.out.println("es primavera");
-                break;
-            case "verano":
-                System.out.println("es verano");
-                break;
-            case "otoño":
-                System.out.println("es otoño");
-                break;
-            case "invierno":
-                System.out.println("es invierno");
-                break;
-            default:
-                System.out.println("la variable no es una estacion");
-        }
-
+        persona.setTelefono(22131889);
+        System.out.println(persona.getTelefono());
     }
 }
+
+class Persona{
+    private int edad;
+    private String nombre;
+    private int telefono;
+
+    public void setEdad(int valorEdad){
+        this.edad = valorEdad;
+    }
+    public int getEdad() {
+        return this.edad;
+    }
+
+    public void setNombre(String valorNombre){
+        this.nombre = valorNombre;
+    }
+    public String getNombre(){
+        return this.nombre;
+    }
+
+    public void setTelefono(int valorTelefono){
+        this.telefono = valorTelefono;
+    }
+    public int getTelefono(){
+        return this.telefono;
+    }
+}
+
+// crear clase persona
+// crear variables privadas edad,nombre y telefono de la persona
+// crear gets y sets de cada propiedad
+// crear un objeto persona en el main
+// utilizar gets y sets para darle valores a las propiedades edad, nombre y telefono, por ultimo mostrar en consola
